@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkay Günay</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">BERKAY GÜNAY</div>
+        <nav>
+            <ul>
+                <li><a href="#main">Ana Sayfa | Home</a></li>
+                <li><a href="#about">Hakkında | About</a></li>
+                <li><a href="#experience">Deneyim | Experience</a></li>
+                <li><a href="#portfolio">Portfolyo | Portfolio</a></li>
+                <li><a href="#contact">İletişim | Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn"><i class="fa-solid fa-sun"
+                            style="color: #c49b63;"></i></button></li>
+            </ul>
+            <!-- 
+                href te #isim yapmamızın sebebi ona tıklandığında başka bir sayfaya gitmek yerine aynı sayfa id si isim olan kısma kay demek
+            -->
+        </nav>
+    </header>
+    <!--Ana giriş kısmı-->
+    <!--<section id="main">
+        <div class="main-text">
+            <h1>Berkay Günay</h1>
+            <p>Yazılım Mühendisi. Fikirleri gerçeğe dönüştürüyorum | Software Engineer. I turn ideas into reality.</p>
+            <a href="#portfolio" class="btn">Projelerimi Gör</a>
+        </div>
+    </section>-->
+    <section id="main">
+        <div class="hero-container">
+
+            <div class="hero-text">
+                <h1>Berkay Günay</h1>
+                <p>Yazılım Mühendisi. Fikirleri gerçeğe dönüştürüyorum. | Software Engineer. I turn ideas into reality.
+                </p>
+                <div class="hero-btns">
+                    <a href="cv.pdf" download="BERKAY_GUNAY_CV" class="btn">Download Resume &#x2193;</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <svg class="floating-animate" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" fill-rule="evenodd">
+                        <circle fill="var(--accent-color)" opacity=".1" cx="400" cy="300" r="250" />
+
+                        <path fill="#E0E0E0" d="M100 520h600l-30 60H130z" />
+                        <path fill="#C0C0C0" d="M100 520h600v15H100z" />
+                        <g transform="translate(220 180)">
+                            <path fill="#333" d="M160 300h40v40h-40z" />
+                            <path fill="#222" d="M130 330h100v10H130z" />
+                            <rect fill="#333" x="0" y="0" width="360" height="240" rx="8" />
+                            <rect fill="#111" x="10" y="10" width="340" height="220" rx="4" />
+                            <g fill="var(--accent-color)">
+                                <rect x="30" y="40" width="100" height="6" rx="2" />
+                                <rect x="140" y="40" width="60" height="6" rx="2" opacity=".7" />
+                                <rect x="50" y="60" width="80" height="6" rx="2" />
+                                <rect x="140" y="60" width="140" height="6" rx="2" opacity=".8" />
+                                <rect x="70" y="80" width="120" height="6" rx="2" />
+
+                                <rect x="30" y="120" width="80" height="6" rx="2" />
+                                <rect x="120" y="120" width="180" height="6" rx="2" opacity=".9" />
+                                <rect x="30" y="140" width="150" height="6" rx="2" opacity=".7" />
+                                <rect x="30" y="170" width="8" height="12" fill="#fff" />
+                            </g>
+                        </g>
+
+                        <g transform="translate(350 300)">
+                            <path fill="#444" d="M0 250h100v10H0z" />
+                            <circle fill="#333" cx="10" cy="260" r="8" />
+                            <circle fill="#333" cx="90" cy="260" r="8" />
+                            <path fill="#555" d="M45 250v-40h10v40z" />
+                            <path fill="#37474F" d="M-20 200h140c10 0 20 10 20 20v10H-40v-10c0-10 10-20 20-20z" />
+
+                            <path fill="#455A64"
+                                d="M10 80h80c10 0 20 20 20 60s-10 70-20 70H10c-10 0-20-30-20-70s10-60 20-60z" />
+
+                            <path fill="#263238" d="M20 90h60c20 0 40 20 40 60v60H-20v-60c0-40 20-60 40-60z" />
+                            <path fill="#263238"
+                                d="M-20 150c-10 0-20-10-20-30s10-30 30-20l30 20M120 150c10 0 20-10 20-30s-10-30-30-20l-30 20" />
+                            <path fill="#FFDCB0" d="M40 90h20v-20H40z" />
+                            <circle fill="#212121" cx="50" cy="60" r="35" />
+                        </g>
+
+                        <g transform="translate(360 500)">
+                            <path fill="#555" d="M-40 0h180v10H-40z" />
+                            <path fill="#555" d="M160 0h30v10h-30z" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!--Hakkında kısmı-->
+    <section id="about">
+        <h2>Hakkında | About</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p>
+                Yeditepe Üniversitesi Bilgisayar Mühendisliği(İngilizce) bölümünden mezun oldum ve bilgisayar bilimleri
+                alanında
+                sağlam bir altyapıya sahibim. Teknik becerilerimi uygulamak ve pratik deneyim kazanmak için bilgisayar
+                mühendisliği alanında aktif olarak fırsatlar arıyorum. Problem çözme konusunda tutkuluyum ve özellikle
+                mobil uygulama geliştirme, arka uç ve ön uç geliştirme alanlarına ilgi duyuyorum. Ayrıca, farklı
+                alanlarda çalışmaya ve kendimi geliştirmeye açığım.
+                <br><br><br><br>
+                I am a Computer Science Engineering(English) graduate from Yeditepe University with a solid background
+                in
+                computer science. I am actively seeking opportunities in the field of computer engineering to apply my
+                technical skills and gain practical experience. I am passionate about problem- solving and have a
+                particular interest in mobile application development, back-end and front-end development. Additionally,
+                I am open to working in different fields and improving myself.
+            </p>
+            <br>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Deneyim | Experience</h2>
+        <div class="timeline-container">
+
+            <div class="timeline-item">
+                <div class="timeline-date">February 2025 - August 2025</div>
+                <div class="timeline-content">
+                    <h3>Karnak Travel</h3>
+                    <h4>Software Developer</h4>
+                    <ul>
+                        <li>
+                            <p>Actively involved in the development of the company’s web-based admin panel.</p>
+                        </li>
+                        <li>
+                            <p>Built and maintained backend features using PHP (MySQLi), focusing on database operations
+                                such as data insertion, retrieval, update, and deletion.</p>
+                        </li>
+                        <li>
+                            <p>Designed and executed efficient SQL queries to manage large volumes of data.</p>
+                        </li>
+                        <li>
+                            <p>Developed responsive and interactive front-end components using HTML, CSS, JavaScript,
+                                and jQuery.</p>
+                        </li>
+                        <li>
+                            <p>Integrated AJAX to enable seamless data exchange without full page reloads.</p>
+                        </li>
+                        <li>
+                            <p>Developed a multi-room reservation web service that supports both XML-based requests and
+                                form-based HTTP POST submissions for dynamic price queries.</p>
+                        </li>
+                    </ul><br>
+
+                    <p><strong>Skills:</strong> HTML, CSS, JavaScript, jQuery, PHP, Bootstrap, MySQL</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">April 2025 - October 2025</div>
+                <div class="timeline-content">
+                    <h3>KoçSistem</h3>
+                    <h4>Intern</h4>
+                    <ul>
+                        <li>
+                            <p>Improved myself in Machine Learning, Pandas, Numpy, Matplotlib.</p>
+                        </li>
+                        <li>
+                            <p>Researched text, audio and video-based datasets suitable for the project and created a
+                                data set inventory by combining the data sets that could be used.</p>
+                        </li>
+                        <li>
+                            <p>Checked the data set to be passed through the model, made the necessary adjustments and
+                                made it suitable for the model. Additionally, I created additional data to the dataset.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Developed a model that converts speech to text. While developing this model, I used
+                                various APIs and libraries. I used the BLEU Score module to calculate the results more
+                                accurately.</p>
+                        </li>
+                    </ul><br>
+                    <p><strong>Skills:</strong> Python, Pandas, Numpy, Machine Learning, Whisper API, Google API, BLUE
+                        Score </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">August 2021</div>
+                <div class="timeline-content">
+                    <h3>DIP Consulting</h3>
+                    <h4>Intern</h4>
+                    <ul>
+                        <li>
+                            <p>Those who joined the company had a mandatory 10-day SQL training and exams. During this
+                                process, I improved myself in SQL.</p>
+                        </li>
+                        <li>
+                            <p>Carried out the testing of the developed websites.</p>
+                        </li>
+                        <li>
+                            <p>Helped develop the website using the Java programming language.</p>
+                        </li>
+                    </ul><br>
+                    <p><strong>Skills:</strong> SQL, JAVA</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Portfolyo kısmı-->
+    <section id="portfolio" style="background-color: var(--light-gray);">
+        <h2>Projeler | Projects</h2>
+        <div class="gallery">
+            <a href="https://github.com/berkay-gunay/PetHealthCareApp" target="_blank" rel="noopener noreferrer">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>PetHealthCareApp</h3>
+                        <p>Evcil hayvanların sağlık bakımını takip etmeyi kolaylaştıran Android uygulama. Database
+                            olarak Firebase kullanılmıştır. Bitirme projemdir.<br><br><br>Android application that makes
+                            it easier to follow the health care of pets. Firebase is used as the database. This is my
+                            Senior Project. <br><br><br> Click here for more details</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/berkay-gunay/SpeechRecognition" target="_blank" rel="noopener noreferrer">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>SpeechRecognition</h3>
+                        <p>Bu model sesi yazıya çevirir. Hem Google API hem de Whisper API (3 farklı versiyonu)
+                            kullanılarak birden çok model geliştirilmiştir. <br><br><br><br> This model converts speech
+                            to text. Multiple models have been developed using both the Google API and the Whisper API
+                            (3 different versions).<br><br><br> Click here for more details</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/berkay-gunay/XML-Service" target="_blank" rel="noopener noreferrer">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>XML-Service</h3>
+                        <p>Dinamik fiyat sorguları için hem XML tabanlı istekleri hem de form tabanlı HTTP POST
+                            gönderimlerini destekleyen çok odalı rezervasyon web hizmeti.<br><br><br>A multi-room
+                            reservation web service that supports both XML-based requests and form-based HTTP POST
+                            submissions for dynamic price queries.<br><br><br> Click here for more details</p>
+                    </div>
+                </div>
+            </a>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Personal Website</h3>
+                    <p>Bu web sitesini benimle ilgili genel bilgileri içeren, portfolio tarzı sade ve şık bir arayüze
+                        sahip olmasını amaçlayarak geliştirdim. <br><br><br> I developed this website with the aim of
+                        creating a portfolio-style site with a simple and elegant interface containing general
+                        information about me.<br><br><br> Click here for more details</p>
+                </div>
+            </div>
+        </div>
+        <p class="liste-gibi-p">Bütün projelerimi görmek için <a class="git_a" href="https://github.com/berkay-gunay"
+                target="_blank" rel="noopener noreferrer">tıklayın</a></p>
+        <p class="liste-gibi-p"><a class="git_a" href="https://github.com/berkay-gunay" target="_blank"
+                rel="noopener noreferrer">Click</a> to see all my projects</p>
+    </section>
+
+    <!--İletişim kısmı-->
+    <section id="contact">
+        <h2>İletişim</h2>
+        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+
+            <p><i class="fa-solid fa-envelope"></i><a
+                    href="mailto:berkaygn7@gmail.com">&nbsp;&nbsp;berkaygn7@gmail.com</a></p>
+            <p><i class="fa-brands fa-github"></i><a href="https://github.com/berkay-gunay"
+                    target="_blank">&nbsp;&nbsp;github.com/berkay-gunay</a></p>
+            <p><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/gunay-berkay/"
+                    target="_blank">&nbsp;&nbsp;linkedin.com/in/gunay-berkay/</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Berkay Günay. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+    const savedTheme = localStorage.getItem('theme');
+
+    // İKON TANIMLARI (Burayı kendi ikon kodlarına göre düzenle)
+    // Örnek: FontAwesome kullanıyorsan class="fa-solid fa-moon" gibi.
+    const moonIcon = '<i class="fa-solid fa-moon"></i>'; // Ay İkonu
+    const sunIcon  = '<i class="fa-solid fa-sun"></i>';  // Güneş İkonu
+
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+        toggleBtn.innerHTML = sunIcon; // Güneş olsun
+    } else {
+        toggleBtn.innerHTML = moonIcon; // Varsayılan Ay olsun
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        
+        if (body.classList.contains('dark-mode')) {
+            toggleBtn.innerHTML = sunIcon; // Koyu moddaysak Güneş göster
+            localStorage.setItem('theme', 'dark');
+        } else {
+            toggleBtn.innerHTML = moonIcon; // Aydınlık moddaysak Ay göster
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
+</body>
+
+</html>
