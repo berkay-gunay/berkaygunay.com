@@ -28,19 +28,9 @@
                 <li><button id="theme-toggle" class="theme-btn"><i class="fa-solid fa-sun"
                             style="color: #c49b63;"></i></button></li>
             </ul>
-            <!-- 
-                href te #isim yapmamızın sebebi ona tıklandığında başka bir sayfaya gitmek yerine aynı sayfa id si isim olan kısma kay demek
-            -->
+            
         </nav>
     </header>
-    <!--Ana giriş kısmı-->
-    <!--<section id="main">
-        <div class="main-text">
-            <h1>Berkay Günay</h1>
-            <p>Yazılım Mühendisi. Fikirleri gerçeğe dönüştürüyorum | Software Engineer. I turn ideas into reality.</p>
-            <a href="#portfolio" class="btn">Projelerimi Gör</a>
-        </div>
-    </section>-->
     <section id="main">
         <div class="hero-container">
 
@@ -262,7 +252,7 @@
                     <p>Bu web sitesini benimle ilgili genel bilgileri içeren, portfolio tarzı sade ve şık bir arayüze
                         sahip olmasını amaçlayarak geliştirdim. <br><br><br> I developed this website with the aim of
                         creating a portfolio-style site with a simple and elegant interface containing general
-                        information about me.<br><br><br> Click here for more details</p>
+                        information about me.<br><br><br></p>
                 </div>
             </div>
         </div>
@@ -295,30 +285,30 @@
     const body = document.body;
     const savedTheme = localStorage.getItem('theme');
 
-    // İKON TANIMLARI (Burayı kendi ikon kodlarına göre düzenle)
-    // Örnek: FontAwesome kullanıyorsan class="fa-solid fa-moon" gibi.
-    const moonIcon = '<i class="fa-solid fa-moon"></i>'; // Ay İkonu
-    const sunIcon  = '<i class="fa-solid fa-sun"></i>';  // Güneş İkonu
+    
+    const moonIcon = '<i class="fa-solid fa-moon"></i>'; 
+    const sunIcon  = '<i class="fa-solid fa-sun"></i>';  
 
     if (savedTheme === 'dark') {
         body.classList.add('dark-mode');
-        toggleBtn.innerHTML = sunIcon; // Güneş olsun
+        toggleBtn.innerHTML = sunIcon; 
     } else {
-        toggleBtn.innerHTML = moonIcon; // Varsayılan Ay olsun
+        toggleBtn.innerHTML = moonIcon; 
     }
 
     toggleBtn.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
         
         if (body.classList.contains('dark-mode')) {
-            toggleBtn.innerHTML = sunIcon; // Koyu moddaysak Güneş göster
+            toggleBtn.innerHTML = sunIcon; 
             localStorage.setItem('theme', 'dark');
         } else {
-            toggleBtn.innerHTML = moonIcon; // Aydınlık moddaysak Ay göster
+            toggleBtn.innerHTML = moonIcon; 
             localStorage.setItem('theme', 'light');
         }
     });
 </script>
 </body>
+
 
 </html>
